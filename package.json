@@ -2,11 +2,12 @@
   "name": "night-owl-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "localhost:3001",
+  "proxy": "https://localhost:3001",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.1",
     "@testing-library/user-event": "^12.2.0",
+    "bootstrap": "^4.5.3",
     "dotenv": "^8.2.0",
     "jquery": "^3.5.1",
     "react": "^17.0.1",
