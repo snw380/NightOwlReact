@@ -2,7 +2,7 @@ import React from "react";
 
 function Members() {
     return(
-        <p>Hello world!</p>
+        <p>Hello Members!</p>
     )
 }
 
