@@ -23,7 +23,7 @@ const app = express();
 
 // Requiring our routes
 require("./routes/html-routes")(app);
-// require("./routes/api-routes")(app);
+require("./routes/api-routes")(app);
 
 // Syncing our database and logging a message to the user upon success
 // db.sequelize.sync().then(() => {
