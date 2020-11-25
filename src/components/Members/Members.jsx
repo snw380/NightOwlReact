@@ -68,11 +68,16 @@ function Members() {
         </div>
 
         {/* <!-- Center element --> */}
-        <div class="col-md-6">
-            <iframe src="https://giphy.com/embed/d8i1XJjV2Ym53KK0Dn" width="500" height="700" style="position:centered"
-            frameBorder="0" class="giphy-embed" allowFullScreen>
+        {/* <div class="col-md-6">
+            <iframe url= "https://giphy.com/embed/d8i1XJjV2Ym53KK0Dn" 
+            id="centerElement"
+            width="500" 
+            height="700" 
+            position = "centered"
+            frameBorder="0" 
+            allowFullScreen>
             </iframe>
-        </div>
+        </div> */}
 
       {/*  <!-- Right Column -->*/}
       <div class="col-md-3 well">
