@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 function Members() {
     return(
 <div class="container text-center">
@@ -68,8 +70,9 @@ function Members() {
         </div>
 
         {/* <!-- Center element --> */}
-        {/* <div class="col-md-6">
+        <div class="col-md-6">
             <iframe url= "https://giphy.com/embed/d8i1XJjV2Ym53KK0Dn" 
+            title="centerGiphy"
             id="centerElement"
             width="500" 
             height="700" 
@@ -77,7 +80,7 @@ function Members() {
             frameBorder="0" 
             allowFullScreen>
             </iframe>
-        </div> */}
+        </div>
 
       {/*  <!-- Right Column -->*/}
       <div class="col-md-3 well">
