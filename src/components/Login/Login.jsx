@@ -19,7 +19,7 @@ function Login() {
               <button type="submit" className="btn btn-default">Login</button>
             </form>
             <br />
-            <p>Or sign up <a href="/">here</a></p>
+            <p>Or sign up <a href="/signup">here</a></p>
           </div>
         </div>
       </div>
