@@ -14,10 +14,12 @@ const useStyles = makeStyles((theme) =>
       boxShadow: "#0000",
     
     },
+             
     menuButton: {
       marginRight: theme.spacing(2),
-      marginLeft: "50px"
-      
+      float: "right",
+      maxHeight: "25px",
+  
     },
     title: {
       flexGrow: 1,
@@ -25,6 +27,7 @@ const useStyles = makeStyles((theme) =>
     },
     logo: {
       maxWidth: "500px",
+      maxHeight: "100px",
       marginRight: "10px",
     
     }
@@ -32,14 +35,7 @@ const useStyles = makeStyles((theme) =>
 );
 
 const theme = createMuiTheme({
-    palette: {
-      primary: {
-       main: "#fffff"
-      },
-      secondary: {
-        main: "#09F920",
-      },
-    },
+  backgroundColor:  "#CECCCC",
   });
 
 export default function NavBar() {
