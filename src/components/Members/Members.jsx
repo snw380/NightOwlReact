@@ -1,153 +1,43 @@
-import React from "react";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    maxWidth: 345,
+  },
+  media: {
+    height: 0,
+    paddingTop: '56.25%', // 16:9
+  },
+  
+}));
 
+export default function Members() {
+  const classes = useStyles();
+ 
 
-function Members() {
-    return(
-<div class="container text-center">
-    <div class="row">
-         {/* Left Column */}
-        <div class="col-md-3 well">
-          {/* <--  KD RATIO --> */}
-            <div class="card ">
-                <div class="well text-center">
-                    <div class="card-body">
-                        <h5 href="#">K/D Ratio</h5>
-                        <p class="card-text">
-                        <span id="kd"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>        
-          {/* <-- WIN LOSS RATIO --> */}
-            <div class="card ">
-                <div class="well text-center">
-                    <div class="card-body">
-                        <h5 href="#">W/L Ratio</h5>
-                        <p class="card-text">
-                        <span id="wl"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            {/* <-- TOTAL TIME PLAYED --> */}
-            <div class="card ">
-                <div class="well text-center">
-                    <div class="card-body">
-                        <h5 href="#">Total Time Played</h5>
-                        <p class="card-text">
-                            <span id="ttp"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            {/* <-- TOTAL GAMES PLAYED -->*/}
-            <div class="card ">
-                <div class="well text-center">
-                    <div class="card-body">
-                        <h5 href="#">Total Games Played</h5>
-                        <p class="card-text">
-                        <span id="tgp"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-            {/* <!-- ACCURACY--> */}
-            <div class="card ">
-                <div class="well text-center">
-                    <div class="card-body">
-                        <h5 href="#">Accuracy</h5>
-                        <p class="card-text">
-                        <span id="acc"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        {/* <!-- Center element --> */}
-        <div class="col-md-6">
-            <iframe url= "https://giphy.com/embed/d8i1XJjV2Ym53KK0Dn" 
-            title="centerGiphy"
-            id="centerElement"
-            width="500" 
-            height="700" 
-            position = "centered"
-            frameBorder="0" 
-            allowFullScreen>
-            </iframe>
-        </div>
-
-      {/*  <!-- Right Column -->*/}
-      <div class="col-md-3 well">
-          {/* <--  KD RATIO --> */}
-            <div class="card ">
-                <div class="well text-center">
-                    <div class="card-body">
-                        <h5 href="#">K/D Ratio</h5>
-                        <p class="card-text">
-                        <span id="kd"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>        
-          {/* <-- WIN LOSS RATIO --> */}
-            <div class="card ">
-                <div class="well text-center">
-                    <div class="card-body">
-                        <h5 href="#">W/L Ratio</h5>
-                        <p class="card-text">
-                        <span id="wl"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            {/* <-- TOTAL TIME PLAYED --> */}
-            <div class="card ">
-                <div class="well text-center">
-                    <div class="card-body">
-                        <h5 href="#">Total Time Played</h5>
-                        <p class="card-text">
-                            <span id="ttp"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            {/* <-- TOTAL GAMES PLAYED -->*/}
-            <div class="card ">
-                <div class="well text-center">
-                    <div class="card-body">
-                        <h5 href="#">Total Games Played</h5>
-                        <p class="card-text">
-                        <span id="tgp"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-            {/* <!-- ACCURACY--> */}
-            <div class="card ">
-                <div class="well text-center">
-                    <div class="card-body">
-                        <h5 href="#">Accuracy</h5>
-                        <p class="card-text">
-                        <span id="acc"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-    )
+  return (
+    <Card className={classes.root}>
+      <CardHeader
+        title="Shrimp and Chorizo Paella"
+       K
+      />
+      <CardMedia
+        className={classes.media}
+        image="/static/images/cards/paella.jpg"
+        title="Paella dish"
+      />
+      <CardContent>
+        <Typography variant="body2" color="textSecondary" component="p">
+          This impressive paella is a perfect party dish and a fun meal to cook together with your
+          guests. Add 1 cup of frozen peas along with the mussels, if you like.
+        </Typography>
+      </CardContent>
+    </Card>
+  );
 }
-
-export default Members
