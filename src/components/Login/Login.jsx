@@ -1,14 +1,6 @@
 import React from "react";
-import {
-  Button,
-  TextField,
-  Grid,
-  Paper,
- 
-  Typography,
- 
-  Link,
-} from "@material-ui/core";
+import "./style.css";
+import {Button, TextField, Grid, Paper,Typography, Link} from "@material-ui/core";
 
 class Login extends React.Component {
   constructor(props) {
